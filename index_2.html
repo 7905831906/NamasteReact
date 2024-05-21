@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="root"></div>
+    <h1>Top</h1>
+    <!-- not replaced by root -->
+    <div id="root">
+        <h1>Nikhar is here!</h1>
+        <!-- it will replace by parent which is put by root -->
+    </div>
+    <!-- not replaced by root -->
+    <h1>Bottom</h1>
     <!-- Core of React  -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <!-- used for modified DOM -->
@@ -15,14 +22,14 @@
 
 <script src="./App.js">
     
-
-    // const paragraph = React.createElement("p", {}, "Hello World From React ");
+</script>
+    <!-- // const paragraph = React.createElement("p", {}, "Hello World From React ");
 
     // const root = ReactDOM.createRoot(document.getElementById("root"));
 
-    // root.render(paragraph);
+    // root.render(paragraph); -->
 
 
-</script>
+
 </body>
 </html>
