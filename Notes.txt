@@ -5,4 +5,6 @@
 
 # DEV Type Dependencies-
   * It is required in a developement phase.
-  * When we are developing our app, then we required dev dependencies
+  * When we are developing our app, then we required dev dependencies 
+
+# Normal Dependencies- It is used in production also.
