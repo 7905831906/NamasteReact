@@ -1,1 +1,8 @@
-package.json is the configuration of the npm
+# package.json is the configuration of the npm.
+# There are two types of dependencies-
+ 1. DEV type dependencies
+ 2. Normal type dependencies
+
+# DEV Type Dependencies-
+  * It is required in a developement phase.
+  * When we are developing our app, then we required dev dependencies
