@@ -19,4 +19,6 @@
 
 #Transitive dependencies- those dependencies have their own dependencies in node modules.
 
-//New
+//Parcel-npm install Parcel
+
+# It is must to put package.json and package-lock.json in your repository

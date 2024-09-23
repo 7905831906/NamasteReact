@@ -1,4 +1,3 @@
- 
 {
   "name": "namastereact",
   "version": "1.0.0",
@@ -13,5 +12,8 @@
   },
   "keywords": [],
   "author": "Nikhar Waris",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
 }
