@@ -8,3 +8,13 @@
   * When we are developing our app, then we required dev dependencies 
 
 # Normal Dependencies- It is used in production also.
+
+#Caret(^)-It is used to upgrade automtically with minor version.
+#Tilde(~)-It is used to upgrade automatically with major version.
+
+#Package.json- it keeps the track of what version of that package installed in your system.(approx version)
+-If there is minor version comes, it upgarde the package with it.
+
+#Package-lock.json-It keeps the track of exact version of that package.
+
+#Transitive dependencies- those dependencies have their own dependencies in node modules.
