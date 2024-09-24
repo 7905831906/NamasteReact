@@ -22,3 +22,5 @@
 //Parcel-npm install Parcel
 
 # It is must to put package.json and package-lock.json in your repository
+#If we have package.json and package-lock.json, we can recreate all our node_modules by using command-npm install
+that's why we cannot put node_modules files on Github.
