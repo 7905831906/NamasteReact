@@ -19,8 +19,29 @@
 
 #Transitive dependencies- those dependencies have their own dependencies in node modules.
 
-//Parcel-npm install Parcel
+//Parcel-npm install -D Parcel
 
 # It is must to put package.json and package-lock.json in your repository
 #If we have package.json and package-lock.json, we can recreate all our node_modules by using command-npm install
 that's why we cannot put node_modules files on Github.
+#building our app using parcel-npx parcel index_1.html
+# npx is used to execute a pacckage-Ex. npx parcel -----
+
+# npx is used to execute a package one time. If we run it again, it will
+# download the package again. If we want to use it again and again, we can install it
+
+# React is not preferred to call or use it via https link in script tag but it is preferred to call or install react in 
+node_modules which is easier to update the version of react.
+
+#React is used as Normal Dependencies not as developement dependencies.
+
+# what Parcel do-
+-Dev build
+-Provide/Make Local Server
+-HMR = Hot Module Replacement
+-File Watching Agorithm- written in C++
+-By doing Caching- provide faster builds
+-Image Optimization
+-Minification of files also
+-Bundling of files
+-Compressing
