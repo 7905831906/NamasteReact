@@ -45,3 +45,12 @@ node_modules which is easier to update the version of react.
 -Minification of files also
 -Bundling of files
 -Compressing
+-Consistent Hashing
+-Code Splitting
+-Differential Bundling- to support older browsers
+-Diagnostic
+-Error Handling is good
+-Tree shaking- remove unused code for you
+-Different dev and prod bundles
+
+#browserslist-
