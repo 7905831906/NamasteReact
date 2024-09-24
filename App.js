@@ -57,8 +57,12 @@
     //JSX is transpiled before it reaches the JS Engine which can be understand by browser & React
     //Tranpiling done by Parcel with the help of Babel
     //JSX => React.createElement => React Element-   JS Object => HTMLElement(when render)
-    const jsxHeading = <h1 id="heading">Namaste React using JSX</h1>//it is not pure javascript
-
+    //Babel - convert JSX To React.createElement
+    //const jsxHeading = <h1 id="heading">Namaste React using JSX</h1>//it is not pure javascript
+    //const jsxHeading = <h1 className="head">Namaste React using JSX</h1>//it is not pure javascript
+    const jsxHeading = (<h1 className="head">
+        Namaste React using JSX
+        </h1>);
     console.log(jsxHeading);
     const root = ReactDOM.createRoot(document.getElementById("root"));
 

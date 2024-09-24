@@ -61,3 +61,17 @@ node_modules which is easier to update the version of react.
 #JSX is not HTML in JavaScript.
 #JSX is a syntax extension for JavaScript
 #JSX-HTML-like or XML-like syntax
+
+    //JSX-is not HTML in JavaScript-HTML-like or XML-like syntax
+    //JSX is transpiled before it reaches the JS Engine which can be understand by browser & React
+    //Tranpiling done by Parcel with the help of Babel
+    //JSX => React.createElement => React Element-   JS Object => HTMLElement(when render)
+    //Babel - convert JSX To React.createElement
+    //if we give attributes in jsx that should be in "camelCase".
+    $Ex-className="head"
+
+    #if JSX is in single line no need to put in parenthesis.
+    #if JSX is in multiple line then we need to put in parenthesis.
+    $Ex-const jsxHeading = (<h1 className="head">
+    Namaste React using JSX
+    </h1>);
