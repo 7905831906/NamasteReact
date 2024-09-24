@@ -54,3 +54,10 @@ node_modules which is easier to update the version of react.
 -Different dev and prod bundles
 
 #browserslist-
+#npm start = npm run start instead of npm parcel index_2.html
+
+#JSX-is different not a part of react.
+#jsx is different then html.
+#JSX is not HTML in JavaScript.
+#JSX is a syntax extension for JavaScript
+#JSX-HTML-like or XML-like syntax
