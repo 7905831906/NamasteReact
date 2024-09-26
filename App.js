@@ -50,8 +50,8 @@
 
     //React Element-
     //React.createElement => React Element-   JS Object => HTMLElement(when render)
-    const heading = React.createElement("h1",{id:"heading"},"Namaste React");
-    console.log(heading);
+    //const heading = React.createElement("h1",{id:"heading"},"Namaste React");
+    
      
     //JSX-is not HTML in JavaScript-HTML-like or XML-like syntax
     //JSX is transpiled before it reaches the JS Engine which can be understand by browser & React
@@ -60,10 +60,37 @@
     //Babel - convert JSX To React.createElement
     //const jsxHeading = <h1 id="heading">Namaste React using JSX</h1>//it is not pure javascript
     //const jsxHeading = <h1 className="head">Namaste React using JSX</h1>//it is not pure javascript
-    const jsxHeading = (<h1 className="head">
-        Namaste React using JSX
-        </h1>);
-    console.log(jsxHeading);
-    const root = ReactDOM.createRoot(document.getElementById("root"));
+    
+    //React Element
+    
+    // const heading = (<h1 className="head">
+    //     Namaste React using JSX
+    //     </h1>);
+   
 
-    root.render(jsxHeading);
+
+    //React Functional Component
+
+    const Title = () => {
+        <h1 className="head">
+        Namaste React using JSX
+        </h1>
+    }
+
+    // const HeadingComponent = () => {
+    //     return <h1 className="heading">Namaste React Functional Component</h1>;
+    // }
+
+    const HeadingComponent = () => (
+       <div id="container">
+        <Title/>
+         <h1 className="heading">Namaste React Functional Component</h1>
+       </div>
+    )
+
+    //## The above both functional component are same.
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+     //only element can render in render method as root.render(heading)
+     //but react component render as first wrap it as <HeadingComponent/>
+    root.render(<HeadingComponent />);

@@ -75,3 +75,29 @@ node_modules which is easier to update the version of react.
     $Ex-const jsxHeading = (<h1 className="head">
     Namaste React using JSX
     </h1>);
+
+    # The above example is the React Element-
+
+    *********************************************************************************************
+    #React Element-like heading
+    $const heading = (<h1 className="head">
+        Namaste React using JSX
+        </h1>);
+    console.log(heading);
+
+    *********************************************************************************************
+    # React Component-
+
+    //Class Based Component-Old way to construct code
+    //Function Based Component-New way to construct code
+    @Functional component is the normal javascript function which returns the jsx elements.
+
+    
+
+
+
+
+
+
+
+    
