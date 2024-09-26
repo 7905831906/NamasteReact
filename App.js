@@ -62,28 +62,43 @@
     //const jsxHeading = <h1 className="head">Namaste React using JSX</h1>//it is not pure javascript
     
     //React Element
-    
-    // const heading = (<h1 className="head">
-    //     Namaste React using JSX
-    //     </h1>);
-   
 
+    const elem = <span>React Span Element</span>
+    
+    const heading = (<h1 className="head">
+        {elem}
+        Namaste React using JSX
+        </h1>);
+   
+      
 
     //React Functional Component
 
-    const Title = () => {
+    const Title = () => (
         <h1 className="head">
         Namaste React using JSX
         </h1>
-    }
+    )
 
     // const HeadingComponent = () => {
     //     return <h1 className="heading">Namaste React Functional Component</h1>;
     // }
+    
+    //Component Composition-put one component in another component
+
+    const data = api.getData();//Jsx takes of these injection attackers meaning suppose api.getData()
+    //passes some miscelleseous data in to our code, it will escape it(sanitizing the code).
 
     const HeadingComponent = () => (
        <div id="container">
+        {/* We can call Title function in Jsx */}
+        {Title()}
+        {/* {heading} */}
+        {/* Both Title calling are same */}
         <Title/>
+        <Title></Title>
+        {/* the above 3 Title call are same  */}
+        
          <h1 className="heading">Namaste React Functional Component</h1>
        </div>
     )

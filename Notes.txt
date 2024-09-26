@@ -56,6 +56,7 @@ node_modules which is easier to update the version of react.
 #browserslist-
 #npm start = npm run start instead of npm parcel index_2.html
 
+********************************************************************************************
 #JSX-is different not a part of react.
 #jsx is different then html.
 #JSX is not HTML in JavaScript.
@@ -91,8 +92,17 @@ node_modules which is easier to update the version of react.
     //Class Based Component-Old way to construct code
     //Function Based Component-New way to construct code
     @Functional component is the normal javascript function which returns the jsx elements.
-
     
+    ********************************************************************************************
+    ?? Can we use javascript in functional component
+    #const HeadingComponent = () => (
+       <div id="container">
+       {Between these curly parenthesis we can use any piece of javascriptcode here.}
+        <Title/>
+         <h1 className="heading">Namaste React Functional Component</h1>
+       </div>
+    )
+    *********************************************************************************************
 
 
 
