@@ -47,6 +47,7 @@
 
     import React from "react";
     import ReactDOM from "react-dom/client";
+    import logo from "./images/logo.png";
 
     //React Element-
     //React.createElement => React Element-   JS Object => HTMLElement(when render)
@@ -63,22 +64,21 @@
     
     //React Element
 
-    const elem = <span>React Span Element</span>
+    // const elem = <span>React Span Element</span>
     
-    const heading = (<h1 className="head">
-        {elem}
-        Namaste React using JSX
-        </h1>);
+    // const heading = (<h1 className="head">
+    //     {elem}
+    //     Namaste React using JSX
+    //     </h1>);
    
-      
-
+    
     //React Functional Component
 
-    const Title = () => (
-        <h1 className="head">
-        Namaste React using JSX
-        </h1>
-    )
+    // const Title = () => (
+    //     <h1 className="head">
+    //     Namaste React using JSX
+    //     </h1>
+    // )
 
     // const HeadingComponent = () => {
     //     return <h1 className="heading">Namaste React Functional Component</h1>;
@@ -86,26 +86,86 @@
     
     //Component Composition-put one component in another component
 
-    const data = api.getData();//Jsx takes of these injection attackers meaning suppose api.getData()
+    // const data = api.getData();//Jsx takes of these injection attackers meaning suppose api.getData()
     //passes some miscelleseous data in to our code, it will escape it(sanitizing the code).
 
-    const HeadingComponent = () => (
-       <div id="container">
-        {/* We can call Title function in Jsx */}
-        {Title()}
-        {/* {heading} */}
-        {/* Both Title calling are same */}
-        <Title/>
-        <Title></Title>
-        {/* the above 3 Title call are same  */}
+    // const HeadingComponent = () => (
+    //    <div id="container">
+    //     {/* We can call Title function in Jsx */}
+    //     {/* {Title()} */}
+    //     {/* {heading} */}
+    //     {/* Both Title calling are same */}
+    //     <Title/>
+    //     {/* <Title></Title> */}
+    //     {/* the above 3 Title call are same  */}
         
-         <h1 className="heading">Namaste React Functional Component</h1>
-       </div>
-    )
+    //      <h1 className="heading">Namaste React Functional Component</h1>
+    //    </div>
+    // )
 
     //## The above both functional component are same.
+
+    const Header = () =>{
+        return(
+            <div className="header">
+              <div className="logo">
+              <img src="https://png.pngtree.com/template/20191024/ourmid/pngtree-food-delivery-logo-design-fast-delivery-service-sign-image_323015.jpg"/>
+              </div>
+              <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+              </div>
+            </div>
+        )
+    };
+
+    // const styleCard = {
+    //     backgroundColor:"gray",
+    // };
+    // Pass javascript object in the style
+
+
+    const RestaurantCard = () =>{
+        return(
+            <div className="res-card" style={{ backgroundColor:"lightgray" }}>
+                <img 
+                className="res-logo"
+                src="https://www.holidify.com/images/cmsuploads/compressed/Vegetarian_Andhra_Meal_20200107182616.jpg"/>
+                <h3>Meghana Foods</h3>
+                <h4>North Indian Thali</h4>
+                <h4>4.4 stars</h4>
+                <h4>38 minutes</h4>
+            </div>
+        )
+    }
+
+    const Body = () =>{
+        return(
+            <div className="body">
+                <div className="search">Search</div>
+                <div className="res-container">
+                <RestaurantCard/>
+                <RestaurantCard/>
+                
+                </div>
+            </div>
+        )
+    }
+
+    const AppLayout = () =>{
+        return(
+            <div className="app">
+                <Header/>
+                <Body/>
+            </div>
+        )
+    }
 
     const root = ReactDOM.createRoot(document.getElementById("root"));
      //only element can render in render method as root.render(heading)
      //but react component render as first wrap it as <HeadingComponent/>
-    root.render(<HeadingComponent />);
+    root.render(<AppLayout />);

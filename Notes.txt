@@ -104,8 +104,24 @@ node_modules which is easier to update the version of react.
     )
     *********************************************************************************************
 
+     ----------------------------Components in an App------------------------------------------------
+    # Header-
+    -Inside Header-
+    @Logo
+    @Nav Items
+    # Body-
+    -Inside Body-
+     @Search-
+     @Card Container(Restaurant Container)
+    #Footer-
+    -Inside Footer-
+    @Copyright
+    @Links
+    @Address
+    @Contact
 
-
+   ***************************************************************************************
+   Props-are just arguments to javasrcipt functional component. 
 
 
 
