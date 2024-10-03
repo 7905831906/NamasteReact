@@ -123,6 +123,8 @@ node_modules which is easier to update the version of react.
    ***************************************************************************************
    Props-are just arguments to javasrcipt functional component. 
 
+   
+
 
 
 

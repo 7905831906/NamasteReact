@@ -128,15 +128,16 @@
     // };
     // Pass javascript object in the style
 
-
-    const RestaurantCard = () =>{
+   //By destructing process props object passed as {resName, cuisine} on the place of porps 
+   //like const RestaurantCard = ({resName, cuisine}) =>{}
+    const RestaurantCard = (props) =>{
         return(
             <div className="res-card" style={{ backgroundColor:"lightgray" }}>
                 <img 
                 className="res-logo"
                 src="https://www.holidify.com/images/cmsuploads/compressed/Vegetarian_Andhra_Meal_20200107182616.jpg"/>
-                <h3>Meghana Foods</h3>
-                <h4>North Indian Thali</h4>
+                <h3>{props.resName}</h3>
+                <h4>{props.cuisine}</h4>
                 <h4>4.4 stars</h4>
                 <h4>38 minutes</h4>
             </div>
@@ -148,8 +149,10 @@
             <div className="body">
                 <div className="search">Search</div>
                 <div className="res-container">
-                <RestaurantCard/>
-                <RestaurantCard/>
+                <RestaurantCard resName="Meghana Foods" 
+                cuisine="North Indian Thali"/>
+                <RestaurantCard resName="KFC" 
+                cuisine="Burger"/>
                 
                 </div>
             </div>
