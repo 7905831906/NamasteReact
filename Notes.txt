@@ -122,8 +122,10 @@ node_modules which is easier to update the version of react.
 
    ***************************************************************************************
    Props-are just arguments to javasrcipt functional component. 
+***********************************************************************************************
+#the Swiggy used config driven UI-ur website is driven by data
+#controlling our  UI by config data which are coming from backend
 
-   
 
 
 
