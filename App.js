@@ -924,7 +924,7 @@
             }
           }
     ]
-
+// not using keys (not acceptable) <<<<< index as key <<<<<< unique id(best practice)
     const Body = () =>{
         return(
             <div className="body">
