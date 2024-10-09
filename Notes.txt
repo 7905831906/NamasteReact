@@ -126,7 +126,8 @@ node_modules which is easier to update the version of react.
 #the Swiggy used config driven UI-ur website is driven by data
 #controlling our  UI by config data which are coming from backend
 
-
+***********************************************************************************************
+#Whenever use map at that time always have to give a key 
 
 
 
