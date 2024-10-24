@@ -130,6 +130,12 @@ node_modules which is easier to update the version of react.
 #Whenever use map at that time always have to give a key 
 #React Says index will not use as keys
 
+*********************************************************************
+there is only one default export in any file. as export default Header;
+and this is import as import Header from "..../path"
+but there is another export for multiple things to export as export const something...
+ and this export import as import {something...} from "..../path" like this.
+
 
 
     
